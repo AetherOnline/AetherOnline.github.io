@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> AetherOnline: Home </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ba7958d753.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ba7958d753.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            background-color: black;
+        }
+
+        nav .navbar-brand {
+            color: white;
+            text-shadow: 2px 2px rgb(212, 82, 255);
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-size: 20px;
+            padding-left: 25px;
+        }
+
+        nav .navbar-brand:hover {
+            color: rgb(230, 230, 230);
+        }
+
+        nav .navbar-brand:focus {
+            color: rgb(230, 230, 230);
+        }
+
+        nav .nav-link {
+            color: white;
+            font-family: 'Righteous', cursive;
+            font-size: 15px;
+        }
+
+        nav .nav-item {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: -20px;
+            padding-bottom: -20px;
+        }
+
+        nav .nav-link:hover {
+            color: rgb(212, 82, 255);
+        }
+
+        nav .nav-link:focus {
+            color: rgb(212, 82, 255);
+        }
+
+        nav .navbar-toggler {
+            color: white;
+        }
+
+        #background {
+            background-image: url(https://steamuserimages-a.akamaihd.net/ugc/1559891726093942691/DCA091F0E5821D0833EF7D8F157381A74E05EE4D/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        .backcolor {
+            margin-top: 100px;
+            background-color: black;
+            border: none;
+            border-radius: 0px;
+            padding: 15px;
+        }
+
+        h2 {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            color: white;
+            padding: 10px;
+            font-size: 25px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        h2 a {
+            color: white;
+        }
+
+        h4 {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            color: black;
+            font-size: 25px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        h5 {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            color: black;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        h4 a,
+        h5 a {
+            color: black;
+        }
+
+        a:hover,
+        a:focus {
+            color: rgb(212, 82, 255);
+        }
+
+        #toast {
+            background-image: url(https://i.ibb.co/kxqgjLF/cybercityepic.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 10px;
+            padding-bottom: -30px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+
+        #toast h1 {
+            color: white;
+            text-shadow: 4px 4px rgb(212, 82, 255);
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        #toast p {
+            color: white;
+            font-family: 'Righteous', cursive;
+            font-size: 20px;
+            text-shadow: 2px 2px rgb(212, 82, 255);
+            text-align: center;
+        }
+
+        .headline {
+            border: none;
+            border-bottom: 3px black solid;
+            margin-bottom: 14px;
+        }
+
+        #feature {
+            background-image: url(https://i.ibb.co/jwXNhW4/cybercity.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 3px black solid;
+            border-radius: 0px;
+        }
+
+        #featurette {
+            color: white;
+            text-shadow: 4px 4px rgb(212, 82, 255);
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-size: 30px;
+            float: left;
+        }
+
+        .featured {
+            border: none;
+            border-bottom: 2px black solid;
+            margin-bottom: 12px;
+        }
+
+        .game {
+            font-family: 'Righteous', cursive;
+            font-size: 20px;
+            color: black;
+            float: left;
+            margin-bottom: -5px;
+        }
+
+        .timeframe {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-size: 20px;
+            color: black;
+            float: right;
+            margin-bottom: -5px;
+        }
+
+        .gameon {
+            font-family: 'Righteous', cursive;
+            font-size: 15px;
+            color: white;
+            float: left;
+            margin-bottom: 5px;
+
+        }
+
+        .timeframeon {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-size: 15px;
+            color: white;
+            float: right;
+            margin-bottom: 5px;
+        }
+
+        .gamemini {
+            font-family: 'Righteous', cursive;
+            font-size: 15px;
+            color: black;
+            float: left;
+            margin-bottom: -5px;
+        }
+
+        .timeframemini {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-size: 15px;
+            color: black;
+            float: right;
+            margin-bottom: -5px;
+        }
+
+        footer {
+            margin-top: 15px;
+        }
+
+        #footertop {
+            background-image: url(https://steamuserimages-a.akamaihd.net/ugc/1559891726093942691/DCA091F0E5821D0833EF7D8F157381A74E05EE4D/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            color: white;
+        }
+
+        #footertop h2 {
+            font-size: 35px;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            text-shadow: 4px 4px rgb(212, 82, 255);
+            margin-bottom: -5px;
+        }
+
+        #footertop h5 {
+            color: white;
+            font-size: 20px;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            text-shadow: 2px 2px rgb(212, 82, 255);
+            margin-bottom: 15px;
+        }
+
+        #footertop p {
+            margin-top: 10px;
+            font-size: 10px;
+            font-family: 'Righteous', cursive;
+        }
+
+        #footericon {
+            background-color: black;
+            padding: 5px;
+        }
+
+        .nav-link i {
+            color: white;
+            font-size: 25px;
+            text-shadow: 2px 2px rgb(212, 82, 255);
+            text-align: center;
+        }
+
+        .nav-link i:hover,
+        .nav-link i:focus {
+            color: rgb(184, 184, 184);
+        }
+
+        #footerbottom {
+            background-color: black;
+        }
+
+        #footerbottom h3 {
+            font-size: 15px;
+            font-family: 'Righteous', cursive;
+            color: white;
+            padding: 10px;
+        }
+
+        #footernav a {
+            color: white;
+            font-family: 'Righteous', cursive;
+            font-size: 15px;
+        }
+
+        #footernav a:hover,
+        #footernav a:focus {
+            color: rgb(212, 82, 255);
+        }
+
+        @media only screen and (max-width: 768px) {
+            #footertop h2 {
+                font-size: 28px;
+            }
+
+            #footertop h5 {
+                font-size: 15px;
+            }
+            
+            #footerbottom h3, #footernav a {
+                font-size: 10px;
+            }
+
+            .nav-link i {
+                font-size: 20px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AetherOnline</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenavbar">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsenavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TRENDING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LATEST</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GAMES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SHOP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-lg" id="background">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <div class="card backcolor">
+                    <h3 class="card-title"><span class="gameon">LEAGUE OF LEGENDS</span>
+                        <p class="timeframeon">39 minutes ago</p>
+                    </h3>
+                    <img src="https://i.ytimg.com/vi/LMDhisnWT2g/maxresdefault.jpg" class="card-img img-fluid"
+                        alt="image here">
+                    <div class="card-body">
+                        <h2 class="card-text"><a
+                                href="https://www.theverge.com/2021/11/21/22791688/league-of-legends-2022-wold-championship-new-york-toronto-sf">League
+                                of Legends 2022 world championship will be a multi-city affair</a></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </div>
+    <div class="container-lg news">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" id="toast">
+                    <h1>AetherOnline</h1>
+                    <p>E-Sports News Rolling in!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="card headline">
+                    <h3 class="card-title"><span class="game">MOBILE LEGENDS</span>
+                        <p class="timeframe">1 hour ago</p>
+                    </h3>
+                    <img class="card-img img-fluid"
+                        src="https://cdn.oneesports.gg/cdn-data/2021/10/MLBB_MPL_PH_S8_champion_BlacklistInternational.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-text"><a
+                                href="https://www.oneesports.gg/mobile-legends/blacklist-international-wins-m3/">Blacklist
+                                International takes the M3 World Championship crown</a></h4>
+                    </div>
+                </div>
+                <div class="card headline">
+                    <h3 class="card-title"><span class="game">MINECRAFT</span>
+                        <p class="timeframe">4 hours ago</p>
+                    </h3>
+                    <img class="card-img img-fluid"
+                        src="https://www.global-esports.news/wp-content/uploads/2022/05/Minecraft-Update-1.19.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-text"><a
+                                href="https://www.pcgamer.com/minecraft-119-update-release-date-the-wild-update/">Minecraft
+                                1.19: Everything We Know About the
+                                Wild Update</a></h4>
+                    </div>
+                </div>
+                <div class="card headline">
+                    <h3 class="card-title"><span class="game">APEX LEGENDS</span>
+                        <p class="timeframe">5 hours ago</p>
+                    </h3>
+                    <img class="card-img img-fluid" src="https://i.ytimg.com/vi/RL8EWXigw8o/maxresdefault.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-text"><a
+                                href="https://www.express.co.uk/entertainment/gaming/1546069/Apex-Legends-Dark-Depths-event">Apex
+                                Legends Dark Depths event adds new Arenas map and challenges</a></h4>
+                    </div>
+                </div>
+                <div class="card headline">
+                    <h3 class="card-title"><span class="game">MUSIC</span>
+                        <p class="timeframe">5 hours ago</p>
+                    </h3>
+                    <img class="card-img img-fluid" src="https://i.ytimg.com/vi/8-_4pilz70c/maxresdefault.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-text"><a
+                                href="https://www.billboard.com/photos/8039391/best-gaming-music-games-songs-edm">
+                                Monstercat's 50 Best Gaming Songs Ever</a></h4>
+                    </div>
+                </div>
+                <div class="card headline">
+                    <h3 class="card-title"><span class="game">COUNTER STRIKE: GLOBAL OFFENSIVE</span>
+                        <p class="timeframe">7 hours ago</p>
+                    </h3>
+                    <img class="card-img img-fluid"
+                        src="https://www.esports.net/wp-content/uploads/2022/01/WePlay-Academy-League.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-text"><a
+                                href="https://www.esports.net/news/weplay-academy-league-season-3-match-predictions/">WePlay
+                                Academy League Season 3 Group A turning very spicy today</a></h4>
+                    </div>
+                </div>
+                <div class="card headline">
+                    <h3 class="card-title"><span class="game">DEFENSE OF THE ANCIENTS 2</span>
+                        <p class="timeframe">8 hours ago</p>
+                    </h3>
+                    <img class="card-img img-fluid"
+                        src="https://cdn.oneesports.gg/cdn-data/2022/04/Dota2_ChaseoftheBalefulReign_ChaosKnight-1-1024x576.webp"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-text"><a
+                                href="https://www.oneesports.gg/dota2/the-dota-2-hero-tier-list-june-2022/">The Dota 2
+                                hero tier list (June 2022)</a></h4>
+                    </div>
+                </div>
+                <div class="card headline">
+                    <h3 class="card-title"><span class="game">MOBILE LEGENDS</span>
+                        <p class="timeframe">9 hours ago</p>
+                    </h3>
+                    <img class="card-img img-fluid" src="https://i.ibb.co/4sZ9QZv/image.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-text"><a
+                                href="https://www.oneesports.gg/mobile-legends/rise-of-the-necrokeep-hero-changes/">Vexana,
+                                Faramis, and Leomord are deadlier than ever in Rise of the Necrokeep update</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="feature">
+                    <h2 id="featurette">Featured News</h2>
+                </div>
+                <br>
+                <div class="card featured">
+                    <h6 class="card-title"><span class="gamemini">GENSHIN IMPACT</span>
+                        <p class="timeframemini">10 hours ago</p>
+                    </h6>
+                    <img class="card-img img-fluid"
+                        src="https://cdn.oneesports.gg/cdn-data/2022/06/GenshinImpact_Yelan_Xiao_sales_featured-1024x576.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-text"><a
+                                href="https://www.oneesports.gg/genshin-impact/xiao-and-yelan-top-genshin-charts/">Yelan
+                                and Xiao break day-one sales record at US$9.8 million overthrowing Raiden Shogun
+                            </a></h5>
+                    </div>
+                </div>
+                <div class="card featured">
+                    <h6 class="card-title"><span class="gamemini">FORTNITE</span>
+                        <p class="timeframemini">11 hours ago</p>
+                    </h6>
+                    <img class="card-img img-fluid"
+                        src="https://images.firstpost.com/wp-content/uploads/2020/11/disney-fortnite-1280.jpg?impolicy=website&width=640&height=362"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-text"><a
+                                href="https://www.firstpost.com/tech/news-analysis/epic-games-to-pull-fortnite-out-of-china-after-government-crackdown-on-tech-and-gaming-firms-10105991.html">Epic
+                                Games to pull Fortnite out of China after government crackdown on tech and gaming
+                                firms</a></h5>
+                    </div>
+                </div>
+                <div class="card featured">
+                    <h6 class="card-title"><span class="gamemini">CALL OF DUTY: MOBILE</span>
+                        <p class="timeframemini">13 hours ago</p>
+                    </h6>
+                    <img class="card-img img-fluid"
+                        src="https://staticg.sportskeeda.com/editor/2022/01/551a7-16412293629946-1920.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-text"><a
+                                href="https://www.sportskeeda.com/esports/rumor-cod-mobile-might-get-verdansk-map-future">COD
+                                Mobile game files reveal Verdansk might be in the cards</a></h5>
+                    </div>
+                </div>
+                <div class="card featured">
+                    <h6 class="card-title"><span class="gamemini">VALORANT</span>
+                        <p class="timeframemini">15 hours ago</p>
+                    </h6>
+                    <img class="card-img img-fluid"
+                        src="https://cdn-wp.thesportsrush.com/2022/01/62247c48-fiwykzlxsagayvu.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-text"><a
+                                href="https://thesportsrush.com/valorant-news-valorant-episode-4-changes/">Valorant
+                                Patch
+                                Notes 4.0 : Take a look at Everything new and improved for Episode 4 Act 1</a></h5>
+                    </div>
+                </div>
+                <div class="card featured">
+                    <h6 class="card-title"><span class="gamemini">LEAGUE OF LEGENDS: WILD RIFT</span>
+                        <p class="timeframemini">18 hours ago</p>
+                    </h6>
+                    <img class="card-img img-fluid"
+                        src="https://staticg.sportskeeda.com/editor/2021/11/814ed-16375711474674-1920.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-text"><a
+                                href="https://www.sportskeeda.com/esports/news-dkg-wins-wild-rift-horizon-cup">DKG wins
+                                Wild
+                                Rift: Horizon Cup</a></h5>
+                    </div>
+                </div>
+                <div class="card featured">
+                    <h6 class="card-title"><span class="gamemini">PLAYER UNKNOWN BATTLEGROUNDS</span>
+                        <p class="timeframemini">18 hours ago</p>
+                    </h6>
+                    <img class="card-img img-fluid"
+                        src="https://i.gadgets360cdn.com/large/pubg_battlegrounds_drones_krafton_1641468788299.jpg?downsize=950:*"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-text"><a
+                                href="https://gadgets.ndtv.com/games/news/pubg-battlegrounds-update-15-2-drones-emt-gear-basic-ai-training-mode-match-krafton-january-12-2692740">PUBG:
+                                Battlegrounds Update 15.2 Brings Drones, EMT Gear, New Training Modes, More</a></h5>
+                    </div>
+                </div>
+                <div class="card featured">
+                    <h6 class="card-title"><span class="gamemini">COMBAT MASTER</span>
+                        <p class="timeframemini">22 hours ago</p>
+                    </h6>
+                    <img class="card-img img-fluid"
+                        src="https://gamingonphone.com/wp-content/uploads/2021/10/codm1-1536x864.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-text"><a href="https://gamingonphone.com/news/combat-master-online-fps/">Combat
+                                Master Online FPS is a new shooter that is heavily inspired by CoD Modern
+                                Warfare</a></h5>
+                    </div>
+                </div>
+                <div class="card featured">
+                    <h6 class="card-title"><span class="gamemini">MOBILE LEGENDS</span>
+                        <p class="timeframemini">23 hours ago</p>
+                    </h6>
+                    <img class="card-img img-fluid"
+                        src="https://cdn.oneesports.gg/cdn-data/2022/06/MLBB_KungFuPanda_Akai_Po.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-text"><a
+                                href="https://www.oneesports.gg/mobile-legends/kung-fu-panda-mobile-legends-leak/">Leaks
+                                prove Kung Fu Panda x Mobile Legends collaboration is coming soon</a></h5>
+                    </div>
+                </div>
+                <div class="card featured">
+                    <h6 class="card-title"><span class="gamemini">STREET FIGHTER V</span>
+                        <p class="timeframemini">1 day ago</p>
+                    </h6>
+                    <img class="card-img img-fluid"
+                        src="https://cdn.oneesports.gg/cdn-data/2022/06/SFIV_RyuvsKen-1024x576.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-text"><a
+                                href="https://www.oneesports.gg/street-fighter/fans-make-fun-of-ken-sf6-new-look/">Fans
+                                cannot stop making fun of Ken after his new look was leaked
+                            </a></h5>
+                    </div>
+                </div>
+                <div class="card featured">
+                    <h6 class="card-title"><span class="gamemini">ARENA OF VALOR</span>
+                        <p class="timeframemini">1 day ago</p>
+                    </h6>
+                    <img class="card-img img-fluid"
+                        src="https://cdn.oneesports.gg/cdn-data/2022/06/ArenaofValor_AIC2018ChampionsJTEam-1024x576.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-text"><a
+                                href="https://www.oneesports.gg/arena-of-valor/aov-aic-2022-schedule-results/">AIC 2022:
+                                Schedule, standings, format, prize pool, teams, where to watch</a></h5>
+                    </div>
+                </div>
+                <div class="card featured">
+                    <h6 class="card-title"><span class="gamemini">TEKKEN</span>
+                        <p class="timeframemini">1 day ago</p>
+                    </h6>
+                    <img class="card-img img-fluid"
+                        src="https://cdn.oneesports.gg/cdn-data/2022/06/Tekken_ComboBreaker2022_ArslanAsh-1024x576.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-text"><a
+                                href="https://www.oneesports.gg/tekken/arslan-ash-combo-breaker-2022/">Arslan Ash proves
+                                that he is still a Tekken god at Combo Breaker 2022</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row" id="footertop">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <h2>AetherOnline</h2>
+                    <h5>E-Sports News Rolling in!</h5>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row" id="footericon">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            <div class="row" id="footerbottom">
+                <div class="col-sm-6">
+                    <h3>Copyright 2022 @ AetherOnline, credits to all owners of pictures and informations</h3>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="nav justify-content-end" id="footernav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LICENSES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HELP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
